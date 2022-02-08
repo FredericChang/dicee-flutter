@@ -23,11 +23,19 @@ class DicePage extends StatelessWidget {
         children: <Widget>[
           Expanded(
               child: TextButton(
-                  child: Image.asset('images/dice2.png')),
+                  onPressed: () {
+                    print('Left button got pressed.');
+                  },
+                  child: Image.asset('images/dice2.png'),
+              ),
           ),
           Expanded(
               child: TextButton(
-                  child: Image.asset('images/dice2.png'))
+                  onPressed: () {
+                    print('Right button got pressed.');
+                  },
+                  child: Image.asset('images/dice2.png'),
+              ),
           ),
         ],
       ),
